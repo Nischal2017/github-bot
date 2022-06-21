@@ -21,7 +21,7 @@ def generateRandomJson(dateAndTime):
 def writeIntoFile(fileN , data):
 	
 	file = open(fileN,'w')
-	jsondata = json.dumps(data)
+	jsondata = json.dumps(data,indent=4,sort_keys=True)
 	file.write(jsondata)
 	return "Data Written into " + fileN
 
