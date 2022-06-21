@@ -12,12 +12,14 @@ commits = {}
 
 plt.style.use('seaborn')
 
+no_of_commits = input("Enter the number of commits to be made : ")
+
 pltdata = gen.makeCommits(0)
 os.system("git add .")
 os.system('git commit -m "First Commit"')
 table.add_row(pltdata)
 
-for times in range(1, 300):
+for times in range(1, no_of_commits):
 	
 	days = random.randint(1, 368)
 	date = f'{days} days ago'
