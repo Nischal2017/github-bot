@@ -12,7 +12,7 @@ commits = {}
 
 plt.style.use('seaborn')
 
-no_of_commits = input("Enter the number of commits to be made : ")
+no_of_commits = int(input("Enter the number of commits to be made : "))
 
 pltdata = gen.makeCommits(0)
 os.system("git add .")
