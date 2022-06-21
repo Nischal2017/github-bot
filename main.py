@@ -1,5 +1,6 @@
 import os
 import generater as gen
+import random
 from matplotlib import pyplot as plt
 from prettytable import PrettyTable
 
@@ -16,8 +17,9 @@ os.system("git add .")
 os.system('git commit -m "First Commit"')
 table.add_row(pltdata)
 
-for days in range(1,368):
+for times in range(1, 300):
 	
+	days = random.randint(1, 368)
 	date = f'{days} days ago'
 	pltdata = gen.makeCommits(days)
 	table.add_row(pltdata)
