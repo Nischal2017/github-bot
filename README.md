@@ -8,6 +8,9 @@ Given below are the steps to run the bot.
 
 ### Step 1
 Clone the repository into your local system.
+```
+git clone <link-to-the-repository>
+```
 
 ### Step 2
 CD into the newly added repository and create a virtual environment using the command:
