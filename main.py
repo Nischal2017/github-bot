@@ -16,7 +16,7 @@ os.system("git add .")
 os.system('git commit -m "First Commit"')
 table.add_row(pltdata)
 
-for days in range(1,366):
+for days in range(1,368):
 	
 	date = f'{days} days ago'
 	pltdata = gen.makeCommits(days)
